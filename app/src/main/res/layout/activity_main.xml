@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/symposium"
+        tools:context="com.dhirajkumarcoder.android.doverqr.MainActivity">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="303dp"
+            android:scaleType="centerCrop"
+            android:alpha="0.85"
+            app:srcCompat="@drawable/background"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/textView_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/imageView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:padding="6dp"
+            android:layout_marginBottom="35dp"
+            android:layout_marginLeft="17dp"
+            android:textSize="36sp"
+            android:text="Welcome" />
+
+        <EditText
+            android:id="@+id/editText_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView_welcome"
+            android:layout_alignStart="@+id/textView_welcome"
+            android:layout_below="@+id/textView_welcome"
+            android:layout_marginTop="45dp"
+            android:ems="10"
+            android:padding="8dp"
+            android:layout_marginRight="12dp"
+            android:hint="Kindly enter your name"
+            android:background="@drawable/rounded_edittext"
+            android:inputType="textPersonName"
+            android:shadowColor="#FFFFFF"
+            android:shadowDx="1.2"
+            android:shadowDy="1.2"
+            android:shadowRadius="1.5"
+            />
+
+        <Button
+            android:id="@+id/buttonsubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText_name"
+            android:layout_alignStart="@+id/editText_name"
+            android:layout_below="@+id/editText_name"
+            android:layout_marginLeft="118dp"
+            android:layout_marginStart="118dp"
+            android:layout_marginTop="64dp"
+            android:text="Button" />
+
+    </RelativeLayout>
